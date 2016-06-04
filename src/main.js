@@ -1,5 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var ex = document.getElementById('example');
+
 // hello world
 /*var CommentBox = React.createClass({displayName: 'CommentBox',
   render: function() {
@@ -122,7 +124,7 @@ ReactDOM.render(<TodoApp />, document.getElementById('example'))*/
 // })
 // ReactDOM.render(<MarkDownEditor />, document.getElementById('example'));
 
-var Comment = React.createClass({
+/*var Comment = React.createClass({
 	render: function() {
 		return (
 				<div className="comment">
@@ -133,7 +135,31 @@ var Comment = React.createClass({
 	}
 })
 
-ReactDOM.render(<Comment children="adadasdasd" author="ctyloading" />, document.getElementById('example'))
+// ReactDOM.render(<Comment children="adadasdasd" author="ctyloading" />, document.getElementById('example'))
 
+var aa = {
+	children : 'as',
+	author : 'ctyloading'
+}
+ReactDOM.render(<Comment {...aa} />, document.getElementById('example'));*/
+
+
+
+
+// FancyCheckbox
+/*function FancyCheckboc(props) {
+	var fancyClass = props.checked ? 'FancyChecked' : 'FancyUnchecked';
+	return (
+			<div {...props} {...z} className={fancyClass} />
+		);
+}
+ReactDOM.render(
+	<FancyCheckboc checked>
+		Helloworld!
+	</FancyCheckboc>,
+	ex
+);*/
+
+// input
 
 
